@@ -15,6 +15,11 @@
     font-size: 40px;
     font-weight: bold;
 }
+@media only screen and (max-width: 600px){
+    .login-page p{
+        text-align: center;
+    }
+}
 
 .login-with-google-btn{
     cursor: pointer;

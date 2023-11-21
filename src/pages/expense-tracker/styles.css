@@ -24,11 +24,18 @@
 .profile-photo{
     width: 200px;
     border-radius: 50%;
+    border: 2px solid grey;
+}
+.add-transaction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .sign-out-button{
     border: none;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 150px;
     background: #3498db;
     background-image: linear-gradient(to bottom , #3498db , #2980b9);
@@ -47,15 +54,50 @@
     cursor: pointer;
 }
 
-.transactions{
-    margin-left: 330px;
-    margin-top: 20px;
+.transactions{ 
+    margin: auto;
     padding-left: 10px;
-    width: 600px;
+    width: 60vw;
     height: 400px;
     overflow: auto;
-    border: 3px solid #023047;
+    border: 1.5px solid #4b4b4b;
+    margin-top: 40px;
 }
 .transactions::-webkit-scrollbar{
     display: none;
+}
+
+
+/* Responsive Section */
+
+@media only screen and (max-width: 800px){
+    .expense-tracker{
+        flex-direction:column-reverse;
+    }
+    .container{
+        text-align: center;
+    }
+    .summary{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        font-size: 16px;
+    }
+    .add-transaction{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .add-transaction form{
+        padding: 10px;
+    }
+    .profile{
+        margin-top:20px; 
+        margin-right: 200px;
+    }
+    .profile-photo{
+        width: 130px;
+    }
+   
 }
